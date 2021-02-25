@@ -1,0 +1,84 @@
+  Container(
+                  width: 1200,
+                  height: changeLayout ? 1000 : 400,
+                  child: LayoutGrid(
+                    areas: changeLayout
+                        ? '''
+                    designH 
+                    designC 
+                    designG
+                    websiteH 
+                    websiteC 
+                    websiteG
+                    wepappH
+                    webappC
+                    webappG
+                    '''
+                        : '''
+                    designH websiteH wepappH
+                    designC websiteC webappC
+                    designG websiteG webappG
+                    ''',
+                    rowSizes: [auto, auto, auto],
+                    columnSizes: [auto, auto, auto],
+                    children: [
+                      //heading
+                      NamedAreaGridPlacement(
+                        areaName: 'designH',
+                        child: Center(child: headText('DESIGN', size)),
+                      ),
+                      NamedAreaGridPlacement(
+                        areaName: 'websiteH',
+                        child: Center(child: headText('WEBSITES', size)),
+                      ),
+                      NamedAreaGridPlacement(
+                        areaName: 'wepappH',
+                        child: Center(child: headText('WEBAPP', size)),
+                      ),
+                      //contents
+                      NamedAreaGridPlacement(
+                        areaName: 'designC',
+                        child: Center(
+                          child: contentText(
+                              'Get dyanmic and engaging designs made for your\nnext website, app, webapp, or platform. Let us bring\n your idea to life.',
+                              size),
+                        ),
+                      ),
+                      NamedAreaGridPlacement(
+                        areaName: 'websiteC',
+                        child: Center(
+                          child: contentText(
+                              'Build an online presence for your business with our\nhigh quality responsive websites, designed to help\ngrow your business.',
+                              size),
+                        ),
+                      ),
+                      NamedAreaGridPlacement(
+                        areaName: 'webappC',
+                        child: Center(
+                          child: contentText(
+                              'Dont worry about website uptime, security, or\nbandwidth. With our hosting services, we will\nmaintain your website and host it for you.',
+                              size),
+                        ),
+                      ),
+                      //action button
+                      NamedAreaGridPlacement(
+                        areaName: 'designG',
+                        child: Center(
+                            child: startButton('GET STARTED',
+                                onPressed: () => null)),
+                      ),
+                      NamedAreaGridPlacement(
+                        areaName: 'websiteG',
+                        child: Center(
+                            child: startButton('GET STARTED',
+                                onPressed: () => null)),
+                      ),
+                      NamedAreaGridPlacement(
+                        areaName: 'webappG',
+                        child: Center(
+                            child: startButton('GET STARTED',
+                                onPressed: () => null)),
+                      ),
+                    ],
+                  ),
+                ),

@@ -1,0 +1,66 @@
+name: pixedio_works
+description: A Personal Portfolio.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.1
+  chewie: ^0.12.2
+  video_player: ^1.0.1
+  avatar_glow: ^1.2.0
+  carousel_slider: ^3.0.0
+  url_launcher: ^5.7.10
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - web/assets/
+    - web/assets/fonts/
+    - web/assets/images/
+    - web/assets/ball_vid.mp4
+    - web/assets/ball_mobile.mp4
+
+  fonts:
+    - family: galderglynn_titling_rg
+      fonts:
+        - asset: web/assets/fonts/galderglynn_titling_rg.ttf
+    - family: Cervanttis
+      fonts:
+        - asset: web/assets/fonts/Cervanttis.ttf
+    - family: helveticaneue
+      fonts:
+        - asset: web/assets/fonts/helveticaneue/HelveticaNeue.ttf
+          weight: 400
+        - asset: web/assets/fonts/helveticaneue/Helvetica Neu Bold.ttf
+          weight: 700
+    - family: Poppins
+      fonts:
+        - asset: web/assets/fonts/Poppins/Poppins-Regular.ttf
+          weight: 400
+        - asset: web/assets/fonts/Poppins/Poppins-Thin.ttf
+          weight: 100
+    - family: DMSans
+      fonts:
+        - asset: web/assets/fonts/DMSans/DMSans-Regular.ttf
+    - family: Montserrat
+      fonts:
+        - asset: web/assets/fonts/Montserrat/Montserrat-Regular.ttf
+          weight: 400
+        - asset: web/assets/fonts/Montserrat/Montserrat-Bold.ttf
+          weight: 800
+   
