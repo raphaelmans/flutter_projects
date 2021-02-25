@@ -32,7 +32,7 @@
 #### Clone the repo
 
 ```
-$ git clone https://github.com/joshuadeguzman/flutter-examples
+$ git clone https://github.com/raphaelmans/flutter_projects.git
 ```
 Select a project
 
