@@ -1,0 +1,45 @@
+name: kickngo
+description: A new Flutter application.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.1
+  font_awesome_flutter: ^8.10.1
+  splashscreen: ^1.3.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: fonts/OpenSans/OpenSans-Regular.ttf
+          weight: 400
+        - asset: fonts/OpenSans/OpenSans-Bold.ttf
+          weight: 700
+        - asset: fonts/OpenSans/OpenSans-Light.ttf
+          weight: 300
+
+# Custom Icons, Just ignore
+    - family: CustomIconFont
+      fonts:
+        - asset: fonts/CustomIconFont.ttf
+
+

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "739170272991",
+    "firebase_url": "https://empathy-tracingapp.firebaseio.com",
+    "project_id": "empathy-tracingapp",
+    "storage_bucket": "empathy-tracingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739170272991:android:4c7f9f736c3f1a23034b6a",
+        "android_client_info": {
+          "package_name": "com.raphaelm.empathytracingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739170272991-qelngorsj3fa0i1ju735950g9695ekve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA4POSjGFnktBcqvVUKK8npvng7gagU9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739170272991-qelngorsj3fa0i1ju735950g9695ekve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
